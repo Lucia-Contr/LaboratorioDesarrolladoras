@@ -1,0 +1,98 @@
+body {
+    font-family: 'Calibri';
+    font-weight: bolder;
+    background-color: #242933;
+    margin-top: 10%;
+}
+
+h1 {
+    color: #A6B3D9;
+    height: 30px;
+    width: 80%;
+    margin: auto;
+    line-height: 10px;
+    margin-top: 30px;
+    display: block;
+}
+
+form {
+    background-color: #2F3644;
+    border: 2px solid #393F55;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+label {
+    color: #7F8BA8;
+    width: 80%;
+    margin: 5px auto;
+    font-weight: 11 px;
+    display: block;
+}
+
+span {
+    color: #C35557;
+    width: 80%;
+    margin: auto;
+    font-size: 10px;
+    display: block;
+}
+
+button {
+    color: white;
+    width: 82%;
+    height: 40px;
+    margin: 15px auto;
+    background-color: #6C63FF;
+    border: 2px solid #262358;
+    border-radius: 5px; 
+    font-size: 10px;
+    font-weight: 500;
+    display: block;
+}
+
+button:hover {
+    border: 2px solid #ffffff;
+}
+
+.formContainer {
+    max-width: 350px;
+    margin: auto;
+}
+
+.formElement {
+    width: 80%;
+    height: 32px;
+    margin: auto;
+    border-radius: 3px;
+    border: none;
+    text-indent: 10px;
+    display: block;
+}
+
+.inputContainer {
+    margin: 1em auto;
+    height: 80px;   
+    display: block;
+}
+
+.valid {
+    box-shadow: inset 0 0 0 2px #45b945;
+    border-radius: 3px;
+    background-image: url('Images/success-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 250px;
+    background-position-y: 6px;
+}
+
+.invalid {
+    box-shadow: inset 0 0 0 2px #C35557;
+    border-radius: 3px;
+    background-image: url('Images/error-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 250px;
+    background-position-y: 6px;
+}

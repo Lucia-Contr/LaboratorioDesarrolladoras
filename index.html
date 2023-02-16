@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO DESARROLLADORAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- FORMULARIO -->
+    <div class="formContainer">
+        <form name="createaccount" onsubmit="return validateForm()">
+            <h1>Create Account</h1>
+            <!-- CONTENEDOR NOMBRE -->
+            <div class="inputContainer">
+                <label for="name"> Nombre </label>
+                <input type="text" name="name" id="name" class="formElement" onblur="validateName()"/>
+                <span id="nameError"></span>
+            </div>
+            <!-- CONTENEDOR EMAIL -->
+            <div class="inputContainer">
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" class="formElement" onblur="validateEmail()" />
+                <span id="emailError"></span>
+            </div>
+            <!-- CONTENEDOR PASSWORD -->
+            <div class="inputContainer">
+                <label for="password"> Clave </label>
+                <input type="password" name="password" id="password" class="formElement" onblur="validatePassword()" />
+                <span id="passwordError"></span>
+            </div>
+            <!-- CONTENEDOR PASSWORD 2 -->
+            <div class="inputContainer">
+                <label for="password2"> Confirme su clave </label>
+                <input type="password" name="password2" id="password2" class="formElement" onblur="validatePassword2()" />
+                <span id="password2Error"></span>
+            </div>
+        <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
